@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background속성</title>
+    <style>
+        * {margin: 0;padding: 0;}
+        div {width: 100%; height: 800px; text-align:  center; font-size: 50px; font-weight: bold;}
+        #box01 {background-color: rgba(255,0,0,.3); background-image: url("bg_01.jpg"); background-repeat: no-repeat; background-size: contain;}
+        #box02 {background-color: rgba(0,255,0,.3); background-image: url("bg_02.jpg"); background-repeat: repeat-x; background-size: cover;}
+        #box03 {background-color: rgba(0,0,255,.3); background-image: url("bg_03.jpg"); background-repeat: repeat-y;}
+        #box04 {background-color: rgba(255,255,0,.3); background-image: url("bg_04.png"); background-size: 300px 100px;}
+        #box05 {background-color: rgba(255,0,255,.3); background-image: url("bg_05.jpg");}
+        #box06 {background-color: rgba(0,255,255,.3);background-image: url("bg_06.jpg");}
+
+        /* 백그라운드 속성 합쳐서 쓰기(축약형)
+        background: color image position / size repeat origin clip attactment;
+        실무에서 작성할 때는
+        background: url("이미지 주소") no-repeat center; */
+
+        /* background-position: 가로축(x축) 기준숫자 또는 위치 세로축(Y축)기준 숫자 또는 위치;
+        만약 한개의 값만 넣을 경우, 가로위치만 지정되고 세로는 center(생략) 또는 세로위치만 지정되고 가로는 center(생략)
+         */
+    </style>
+</head>
+<body>
+    <div id="box01">박스01</div>
+    <div id="box02">박스02</div>
+    <div id="box03">박스03</div>
+    <div id="box04">박스04</div>
+    <div id="box05">박스05</div>
+    <div id="box06">박스06</div>
+    <div id="box07">박스07</div>
+</body>
+</html>
